@@ -1,0 +1,32 @@
+{
+  "name": "puppeteerjs-layer",
+  "version": "1.0.0",
+  "description": "layer containing puppeteer requireing modules for JS",
+  "main": "index.js",
+  "directories": {},
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "start:dev": "node index.js",
+    "start:build": "npm install && npm run-script build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && mkdir -p nodejs && cp -r node_modules nodejs/ && zip -r puppeteerjs-layer.zip nodejs"
+  },
+  "engines": {
+    "node": ">=10.16.3"
+  },
+  "keywords": [
+    "pdf",
+    "node",
+    "puppeteer",
+    "layer"
+  ],
+  "author": "Swapnil Sharma <nilinswap@github.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "package.json": "^2.0.1",
+    "puppeteer": "^2.0.0"
+  }
+}
